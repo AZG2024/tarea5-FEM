@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | 3-column preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .contenedor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 80vh;
+      }
+      .contenedor1 {
+        background-color: #e28625;
+        display: flex;
+
+        flex-direction: column;
+        align-items: center;
+        border-top-left-radius: 1em;
+        border-bottom-left-radius: 1em;
+        width: 400px;
+      }
+      h1 .sedans {
+        color: white;
+        font-size: 40px;
+        font-weight: 700;
+      }
+      .contenedor2 {
+        background-color: #006971;
+        display: flex;
+
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+      }
+      h1 .suvs {
+        color: white;
+        font-size: 40px;
+        font-weight: 700;
+      }
+      .contenedor3 {
+        background-color: #004140;
+        display: flex;
+        border-top-right-radius: 1em;
+        border-bottom-right-radius: 1em;
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+      }
+      h1 .lux {
+        color: white;
+        font-size: 40px;
+        font-weight: 700;
+      }
+      h1 {
+        align-self: flex-start;
+        margin-left: 1.4em;
+        color: white;
+      }
+      p {
+        color: white;
+        padding: 1em 3em;
+        font-size: 15px;
+      }
+      button {
+        align-self: flex-start;
+        margin-left: 3.3em;
+        background-color: white;
+        border-radius: 4em;
+        border: none;
+        padding: 1em 2em;
+        margin-bottom: 1.5em;
+        margin-top: 5em;
+      }
+      img {
+        align-self: self-start;
+        margin-left: 2em;
+        margin-top: 4em;
+      }
+      .botonsedans {
+        position: relative;
+      }
+      @media (max-width: 758px) {
+        .contenedor {
+          flex-wrap: wrap;
+        }
+        .contenedor1 {
+          border-top-right-radius: 1em;
+          border-bottom-left-radius: 0em;
+        }
+        .contenedor3 {
+          border-bottom-right-radius: 1em;
+          border-bottom-left-radius: 1em;
+          border-top-right-radius: 0em;
+        }
+      }
+    </style>
+    <div class="contenedor">
+      <div class="contenedor1">
+        <img src="./images/icon-sedans.svg" />
+        <h1 class="sedans">Sedans</h1>
+        <p class="parrafosedans">
+          Choose a sedan for its affordability and excellent fuel economy. Ideal
+          for cruising in the city or on your next road trip.
+        </p>
+        <button style="color: #e28625" class="botonsedans" class="boton">
+          Learn More
+        </button>
+      </div>
+      <div class="contenedor2">
+        <img src="./images/icon-suvs.svg" />
+        <h1 class="suvs">Suvs</h1>
+        <p class="parrafosedans">
+          Take an SUV for its spacious interior, power, and versatility. Perfect
+          for your next family vacation and off-road adventures.
+        </p>
+        <button style="color: #006971" class="boton">Learn More</button>
+      </div>
+      <div class="contenedor3">
+        <img src="./images/icon-luxury.svg" />
+        <h1 class="lux">Luxury</h1>
+        <p class="parrafosedans">
+          Cruise in the best car brands without the bloated prices. Enjoy the
+          enhanced comfort of a luxury rental and arrive in style.
+        </p>
+        <button style="color: #004140" class="luxy" class="boton">
+          Learn More
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
